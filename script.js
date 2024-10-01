@@ -10,8 +10,8 @@ let history = []; // for undo/redo
 let currentState = [];
 let redoStack = [];
 
-// Initialize grid
-for (let i = 0; i < 100; i++) {
+// Initialize grid with 50 cells (5x10)
+for (let i = 0; i < 50; i++) {
   const gridCell = document.createElement('div');
   gridCell.id = `cell-${i}`;
   gridCell.addEventListener('dragover', allowDrop);
