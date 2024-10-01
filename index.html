@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wind Turbine Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Wind Energy Conversion System Puzzle</h1>
+
+  <div class="container">
+    <!-- Left side (Puzzle Grid) -->
+    <div class="grid-container">
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <!-- Right side (Parts Library) -->
+    <div class="library-container">
+      <h2>Library</h2>
+      <div id="library">
+        <img src="images/blade.png" alt="Blade" class="draggable" id="blade" draggable="true">
+        <img src="images/hub.png" alt="Hub" class="draggable" id="hub" draggable="true">
+        <img src="images/tower.png" alt="Tower" class="draggable" id="tower" draggable="true">
+      </div>
+      <button id="hintBtn">Hint</button>
+      <button id="undoBtn">Undo</button>
+      <button id="redoBtn">Redo</button>
+      <button id="submitBtn">Submit</button>
+    </div>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
